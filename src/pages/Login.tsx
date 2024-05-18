@@ -43,8 +43,8 @@ function Login() {
     useEffect(() => {
         userInstance.get("profile/").then((_) => {
             navigate("/");
-        });
-    }, [])
+        }).catch(() => { });
+    }, []);
 
     const onSubmit = async (values: UserCredentials) => {
         toggleVisibility();
@@ -89,7 +89,9 @@ function Login() {
                             {...formik.getFieldProps('email')}
                         />
                         {formik.touched.email && formik.errors.email ? (
-                            <div>{formik.errors.email}</div>
+                            <div id='emailErrorFeedback' className='text-red-600'>
+                                {formik.errors.email}
+                            </div>
                         ) : null}
                     </div>
                     <div>
@@ -103,7 +105,9 @@ function Login() {
                             {...formik.getFieldProps('password')}
                         />
                         {formik.touched.email && formik.errors.email ? (
-                            <div>{formik.errors.password}</div>
+                            <div id='passwordErrorFeedback' className='text-red-600'>
+                                {formik.errors.password}
+                            </div>
                         ) : null}
                     </div>
                     <button className='text-lg font-bold h-[54px] bg-[#02274F] text-[#FAFAFA] 
