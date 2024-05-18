@@ -15,5 +15,5 @@ jobs:
           browser: chrome
           headed: true
           build: npm run build
-          start: npm start
+          start: npm dev
           wait-on: "http://localhost:5173"
