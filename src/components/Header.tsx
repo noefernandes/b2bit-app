@@ -7,7 +7,7 @@ interface ComponentProps {
 function Header(props: ComponentProps) {
     return (
         <>
-            <div className="w-full h-[70px] bg-[#FFFFFF] flex flex-col justify-center">
+            <div id="header" className="w-full h-[70px] bg-[#FFFFFF] flex flex-col justify-center">
                 {props.children}
             </div>
         </>

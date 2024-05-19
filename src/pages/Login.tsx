@@ -81,7 +81,7 @@ function Login() {
                     className='px-11 xxs:max-xs:px-2 w-full'
                 />
                 <div className='h-4'>
-                    <p id='submitErrorFeedback' className='text-red-600'>
+                    <p id='submitErrorFeedback' className='text-red-600 text-md'>
                         {errorOnSubmit ? "Wrong credentials. Please try again." : ""}
                     </p>
                 </div>
@@ -96,7 +96,7 @@ function Login() {
                             placeholder="@gmail.com"
                             {...formik.getFieldProps('email')}
                         />
-                        <div id='emailErrorFeedback' className='text-red-600 h-4'>
+                        <div id='emailErrorFeedback' className='text-red-600 h-4 text-sm'>
                             {formik.touched.email && formik.errors.email ? (
                                 <p>{formik.errors.email}</p>
                             ) : null}
@@ -112,7 +112,7 @@ function Login() {
                             placeholder='****************'
                             {...formik.getFieldProps('password')}
                         />
-                        <div id='passwordErrorFeedback' className='text-red-600 h-4'>
+                        <div id='passwordErrorFeedback' className='text-red-600 h-4 text-sm'>
                             {formik.touched.password && formik.errors.password ? (
 
                                 <p> {formik.errors.password} </p>
