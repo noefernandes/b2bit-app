@@ -9,8 +9,11 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Run Unit Tests
-        run: npm run test
+      - name: Unit Tests
+        run: |
+          npm install
+          npm install -g jest
+          npm run test
 
       - name: Cypress run
         uses: cypress-io/github-action@v6
