@@ -15,7 +15,5 @@ userInstance.interceptors.request.use((request) => {
         request.headers.Authorization = `Bearer ${accessToken}`;
     }
 
-    console.log("credenciais:", accessToken);
-
     return request
 });

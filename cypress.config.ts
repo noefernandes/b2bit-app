@@ -8,5 +8,9 @@ export default defineConfig({
     },
     baseUrl: "http://localhost:5173",
     testIsolation: false,
+    specPattern: [
+      "cypress/e2e/loginTest.cy.ts",
+      "cypress/e2e/homeTest.cy.ts",
+    ]
   },
 });

@@ -43,7 +43,7 @@ loginInstance.interceptors.response.use(
         isRefreshing = true;
 
         try {
-            const response = await loginInstance.post("refresh", {
+            const response = await loginInstance.post("refresh/", {
                 refresh: localStorage.getItem("refreshToken") ?? ""
             })
 

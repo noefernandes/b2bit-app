@@ -34,6 +34,7 @@ const validationSchema = Yup.object({
 function Login() {
     const [isVisible, setIsVisible] = useState<boolean>(false);
     const { login } = useAuth();
+    const [errorOnSubmit, setErrorOnSubmit] = useState<boolean>(false);
     const navigate = useNavigate();
 
     const toggleVisibility = () => {
@@ -49,12 +50,14 @@ function Login() {
     const onSubmit = async (values: UserCredentials) => {
         toggleVisibility();
 
-        const response = await loginInstance.post("login/", values);
-
-        login(
-            response.data.tokens.access,
-            response.data.tokens.refresh
-        );
+        loginInstance.post("login/", values).then((response) => {
+            login(
+                response.data.tokens.access,
+                response.data.tokens.refresh
+            );
+        }).catch((_) => {
+            setErrorOnSubmit(true);
+        })
     };
 
     const formik = useFormik({
@@ -75,9 +78,14 @@ function Login() {
             <Card height="h-[534px]" width="w-[438px]"
                 boxShadow="shadow-[0_0_64px_0#00000040]" bgColor="bg-[#FFFFFF]">
                 <img src={Logo}
-                    className='px-11 xxs:max-xs:px-2 w-full mb-6'
+                    className='px-11 xxs:max-xs:px-2 w-full'
                 />
-                <form onSubmit={formik.handleSubmit} className='grid grid-rows-3 gap-4 w-full px-6'>
+                <div className='h-4'>
+                    <p id='submitErrorFeedback' className='text-red-600'>
+                        {errorOnSubmit ? "Wrong credentials. Please try again." : ""}
+                    </p>
+                </div>
+                <form onSubmit={formik.handleSubmit} className='grid grid-rows-3 gap-1 w-full px-6 mt-1'>
                     <div>
                         <p className='text-lg font-bold text-[#262626]'>
                             E-mail
@@ -88,11 +96,11 @@ function Login() {
                             placeholder="@gmail.com"
                             {...formik.getFieldProps('email')}
                         />
-                        {formik.touched.email && formik.errors.email ? (
-                            <div id='emailErrorFeedback' className='text-red-600'>
-                                {formik.errors.email}
-                            </div>
-                        ) : null}
+                        <div id='emailErrorFeedback' className='text-red-600 h-4'>
+                            {formik.touched.email && formik.errors.email ? (
+                                <p>{formik.errors.email}</p>
+                            ) : null}
+                        </div>
                     </div>
                     <div>
                         <p className='text-lg font-bold text-[#262626]'>
@@ -104,13 +112,16 @@ function Login() {
                             placeholder='****************'
                             {...formik.getFieldProps('password')}
                         />
-                        {formik.touched.email && formik.errors.email ? (
-                            <div id='passwordErrorFeedback' className='text-red-600'>
-                                {formik.errors.password}
-                            </div>
-                        ) : null}
+                        <div id='passwordErrorFeedback' className='text-red-600 h-4'>
+                            {formik.touched.password && formik.errors.password ? (
+
+                                <p> {formik.errors.password} </p>
+
+                            ) : null}
+                        </div>
+
                     </div>
-                    <button className='text-lg font-bold h-[54px] bg-[#02274F] text-[#FAFAFA] 
+                    <button id='submitBtn' className='text-lg font-bold h-[54px] bg-[#02274F] text-[#FAFAFA] 
                     rounded-[9px] self-center transition duration-300 ease-in-out hover:scale-105'
                         type="submit"
                     >

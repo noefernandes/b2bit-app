@@ -31,6 +31,7 @@ function Home() {
         >
             <Header>
                 <button
+                    id="logoutBtn"
                     className="text-lg font-bold h-[44px] w-[272px] bg-[#02274F]
                             text-[#FAFAFA] rounded-[9px] self-end mr-10 
                             xxs:max-xs:w-4/5 xxs:max-md:mr-0 xxs:max-md:self-center"
@@ -52,7 +53,9 @@ function Home() {
                                 Your
                                 <span className="text-[#2F2F2F] font-bold"> Name</span>
                             </p>
-                            <input className='text-[12px]/[12px] font-normal p-4 mt-1 h-[44px] w-full 
+                            <input
+                                id="name"
+                                className='text-[12px]/[12px] font-normal p-4 mt-1 h-[44px] w-full 
                                             bg-[#F1F1F1] rounded-[9px]'
                                 type="text"
                                 placeholder="Christine James"
@@ -65,7 +68,9 @@ function Home() {
                                 Your
                                 <span className="text-[#2F2F2F] font-bold"> E-mail</span>
                             </p>
-                            <input className='text-[12px]/[12px] font-normal p-4 mt-1 h-[44px] w-full 
+                            <input
+                                id="email"
+                                className='text-[12px]/[12px] font-normal p-4 mt-1 h-[44px] w-full 
                                             bg-[#F1F1F1] rounded-[9px] focus:outline-none'
                                 type='text' placeholder='christinejames@mail.com'
                                 value={email}
