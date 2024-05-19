@@ -56,9 +56,8 @@ function Home() {
                             <input
                                 id="name"
                                 className='text-[12px]/[12px] font-normal p-4 mt-1 h-[44px] w-full 
-                                            bg-[#F1F1F1] rounded-[9px]'
+                                            bg-[#F1F1F1] rounded-[9px] focus:outline-none'
                                 type="text"
-                                placeholder="Christine James"
                                 value={name}
                                 readOnly
                             />
@@ -72,7 +71,7 @@ function Home() {
                                 id="email"
                                 className='text-[12px]/[12px] font-normal p-4 mt-1 h-[44px] w-full 
                                             bg-[#F1F1F1] rounded-[9px] focus:outline-none'
-                                type='text' placeholder='christinejames@mail.com'
+                                type='text'
                                 value={email}
                                 readOnly
                             />
