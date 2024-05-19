@@ -1,4 +1,6 @@
-import Card from './Card'
+/// <reference types="cypress" />
+
+import Card from '../../src/components/Card'
 
 describe('<Card />', () => {
     it('Verifies that <Card /> renders', () => {

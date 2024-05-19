@@ -1,4 +1,5 @@
-import Header from './Header'
+import React = require('react')
+import Header from '../../src/components/Header'
 
 describe('<Header />', () => {
   it('Verifies that <Header /> renders', () => {
