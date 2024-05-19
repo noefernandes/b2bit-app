@@ -1,7 +1,7 @@
 import Logo from '../assets/logo.svg'
 import Card from '../components/Card';
 import { useEffect, useState } from 'react';
-import { motion } from "framer-motion"
+import { motion } from "framer-motion";
 import { useAuth } from '../auth/AuthProvider';
 import * as Yup from 'yup';
 import { useFormik } from 'formik';
