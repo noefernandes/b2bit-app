@@ -1,5 +1,3 @@
-import cypress = require("cypress");
-
 class Home {
     elements = {
         nameInput: () => cy.get('#name'),
