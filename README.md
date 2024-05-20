@@ -57,7 +57,7 @@ As the access is still on the browsers local storage, the user does not need to 
 ### 3. As a user, I want to have a feedback if I fill the wrong credentials, so I know that I did something wrong and I can fix it
 In this case, formik deals with form errors, while submission errors are validated by an application function that expects to receive a valid access token.
 
-![gif3](https://github.com/noefernandes/b2bit-app/assets/36737390/9dad4d2a-dc9f-4da8-850f-d6922d720cf4)
+![video 3](https://github.com/noefernandes/b2bit-app/assets/36737390/8181f526-5697-467a-9f91-1e9d7c5dfae0)
 
 ### 4. As a user, I want to have a home page with my profile, so I can see my personal info
 The following gif shows the user page with all user informations displayed. Also you can see that the tokens were registered after the login.
