@@ -45,7 +45,7 @@ The application is deployed to Vercel with each push.
 ## Functional requirements
 
 ### 1. As a user, I want to have a sign in page, so I can have access to my profile
-Users can authenticate using their credentials, meanwhile jwt tokens are stored in the browser's local storage.
+Users can authenticate using their credentials, meanwhile the jwt tokens are stored in the browser's local storage.
 
 ![gif1](https://github.com/noefernandes/b2bit-app/assets/36737390/b3c09179-fcc3-4cb1-a045-e5d234dcd075)
 
@@ -60,7 +60,7 @@ In this case, formik deals with form errors, while submission errors are validat
 ![gif3](https://github.com/noefernandes/b2bit-app/assets/36737390/9dad4d2a-dc9f-4da8-850f-d6922d720cf4)
 
 ### 4. As a user, I want to have a home page with my profile, so I can see my personal info
-The following gif shows the user page with all user information displayed. Also you can see that the tokens were registered after the login.
+The following gif shows the user page with all user informations displayed. Also you can see that the tokens were registered after the login.
 
 ![gif4](https://github.com/noefernandes/b2bit-app/assets/36737390/ea060449-9e28-47f7-8d5b-8c79bebc5e91)
 
