@@ -91,7 +91,7 @@ function Login() {
                         <p className='text-lg font-bold text-[#262626]'>
                             E-mail
                         </p>
-                        <input className='p-4 mt-2 h-[54px] w-full bg-[#F1F1F1] rounded-[9px]'
+                        <input className='font-normal p-4 mt-2 h-[54px] w-full bg-[#F1F1F1] rounded-[9px]'
                             id="email"
                             type="text"
                             placeholder="@gmail.com"
@@ -107,7 +107,7 @@ function Login() {
                         <p className='text-lg font-bold text-[#262626]'>
                             Password
                         </p>
-                        <input className='font-black p-4 mt-2 h-[54px] w-full bg-[#F1F1F1] rounded-[9px]'
+                        <input className='font-normal p-4 mt-2 h-[54px] w-full bg-[#F1F1F1] rounded-[9px]'
                             id="password"
                             type='password'
                             placeholder='****************'
