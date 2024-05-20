@@ -4,6 +4,15 @@ This project is a website that implements a login page, consuming an API and the
 
 https://b2bit-app.vercel.app/
 
+## How to run locally
+
+```bash
+git clone https://github.com/noefernandes/b2bit-app.git
+cd b2bit-app
+npm install
+npm run dev
+```
+
 ## The result
 
 The following screenshots show the final state of the site's pages, paying attention to responsiveness for both desktops and smartphones.
