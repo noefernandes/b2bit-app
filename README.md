@@ -22,7 +22,7 @@ The following screenshots show the final state of the site's pages, paying atten
 
 ## Details of the project's non-functional requirements
 
-|                | Checklist |
+| Checklist      | Done |
 |----------------|------------------|
 | Typescript | :white_check_mark: |
 | ReactJS | :white_check_mark: |
