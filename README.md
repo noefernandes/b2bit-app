@@ -6,6 +6,8 @@ https://b2bit-app.vercel.app/
 
 ## The result
 
+The following screenshots show the final state of the site's pages, paying attention to responsiveness for both desktops and smartphones.
+
 <img src="https://github.com/noefernandes/b2bit-app/assets/36737390/f624289c-dcf7-48dd-80a5-79acbcad4173.png" alt="Image 1" align="center" style="width: 800px"/></td>
 <img src="https://github.com/noefernandes/b2bit-app/assets/36737390/2a76262a-21f3-40b5-9d55-68da793572f9.png" alt="Image 2" align="center" style="width: 200px"/></td>
 
