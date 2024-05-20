@@ -1,6 +1,6 @@
 # b2b-app 
 
-This project is a website that implements a login page, consuming an API and then showing a page with user information. This project is part of the b2bit company challenge.
+This project is a website that implements a login page, consuming an API and then showing a page with the user informations. This project is part of the b2bit company challenge.
 
 https://b2bit-app.vercel.app/
 
