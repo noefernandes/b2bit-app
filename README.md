@@ -35,6 +35,13 @@ The following screenshots show the final state of the site's pages, paying atten
 | TailWind | :white_check_mark: |
 | Deploy | :white_check_mark: |
 
+About the tests:
+
+- Unit tests were performed using the library Vitest, while e2e and component tests were performed using Cypress.
+- A github actions pipeline runs the application build and testing process with each push.
+
+The application is deployed to Vercel with each push.
+
 ## Functional requirements
 
 ### 1. As a user, I want to have a sign in page, so I can have access to my profile
@@ -58,10 +65,9 @@ The following gif shows the user page with all user information displayed. Also 
 ![gif4](https://github.com/noefernandes/b2bit-app/assets/36737390/ea060449-9e28-47f7-8d5b-8c79bebc5e91)
 
 ### 5. As a user, I want to have a logout button, so when I am finished, I can log out of my account
+The logout functionality works fine as well. After pressing the logout button, you can see that the tokens are removed from local storage and now the user needs to authenticate again if he wants to use the site.
 
 ![gif5](https://github.com/noefernandes/b2bit-app/assets/36737390/244aa75b-1309-4852-83b9-30f03b97f97f)
-
-The logout functionality works fine as well. After pressing the logout button, you can see that the tokens are removed from local storage and now the user needs to authenticate again if he wants to use the site.
 
 ## Contributors
 
