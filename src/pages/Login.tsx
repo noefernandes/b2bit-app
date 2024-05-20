@@ -34,7 +34,7 @@ const validationSchema = Yup.object({
 function Login() {
     const [isVisible, setIsVisible] = useState<boolean>(false);
     const { login } = useAuth();
-    const [errorOnSubmit, setErrorOnSubmit] = useState<string>('');
+    const [errorOnSubmit, setErrorOnSubmit] = useState<boolean>(false);
     const navigate = useNavigate();
 
     const toggleVisibility = () => {
@@ -83,7 +83,7 @@ function Login() {
                 />
                 <div className='h-4'>
                     <p id='submitErrorFeedback' className='text-red-600 text-md'>
-                        {errorOnSubmit != '' ? "Wrong credentials. Please try again." : ""}
+                        {errorOnSubmit ? "Wrong credentials. Please try again." : ""}
                     </p>
                 </div>
                 <form onSubmit={formik.handleSubmit} className='grid grid-rows-3 gap-1 w-full px-6 mt-1'>
