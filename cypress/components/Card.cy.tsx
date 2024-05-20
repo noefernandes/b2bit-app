@@ -1,5 +1,6 @@
 /// <reference types="cypress" />
 
+import React = require('react')
 import Card from '../../src/components/Card'
 
 describe('<Card />', () => {
