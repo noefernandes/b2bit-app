@@ -47,12 +47,12 @@ The application is deployed to Vercel with each push.
 ### 1. As a user, I want to have a sign in page, so I can have access to my profile
 Users can authenticate using their credentials, meanwhile the jwt tokens are stored in the browser's local storage.
 
-![gif1](https://github.com/noefernandes/b2bit-app/assets/36737390/b3c09179-fcc3-4cb1-a045-e5d234dcd075)
+![video 1 (online-video-cutter com)](https://github.com/noefernandes/b2bit-app/assets/36737390/0b5faaf5-e71b-4776-8176-de854d2fd23e)
 
 ### 2. As a user, I want the system to keep me signed in, so I don't need to put my credentials every time I open the system
 As the access is still on the browsers local storage, the user does not need to login. The application will always allow the user access while the token is still valid.
 
-![gif2](https://github.com/noefernandes/b2bit-app/assets/36737390/f768e000-c890-483e-804a-adf3f9badde1)
+![video 2](https://github.com/noefernandes/b2bit-app/assets/36737390/522893a4-6c63-4f2e-a6e5-ecc098c8e79f)
 
 ### 3. As a user, I want to have a feedback if I fill the wrong credentials, so I know that I did something wrong and I can fix it
 In this case, formik deals with form errors, while submission errors are validated by an application function that expects to receive a valid access token.
@@ -62,12 +62,12 @@ In this case, formik deals with form errors, while submission errors are validat
 ### 4. As a user, I want to have a home page with my profile, so I can see my personal info
 The following gif shows the user page with all user informations displayed. Also you can see that the tokens were registered after the login.
 
-![gif4](https://github.com/noefernandes/b2bit-app/assets/36737390/ea060449-9e28-47f7-8d5b-8c79bebc5e91)
+![video 4](https://github.com/noefernandes/b2bit-app/assets/36737390/684a15ca-7c9a-4bad-9792-ea015fe09ff2)
 
 ### 5. As a user, I want to have a logout button, so when I am finished, I can log out of my account
 The logout functionality works fine as well. After pressing the logout button, you can see that the tokens are removed from local storage and now the user needs to authenticate again if he wants to use the site.
 
-![gif5](https://github.com/noefernandes/b2bit-app/assets/36737390/244aa75b-1309-4852-83b9-30f03b97f97f)
+![video 5](https://github.com/noefernandes/b2bit-app/assets/36737390/e9cb4747-5add-42e2-8ffe-449ca6bc46e4)
 
 ## Contributors
 
